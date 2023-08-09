@@ -29,6 +29,8 @@ namespace PrintIt.Core
 
             using var printDocument = new PrintDocument();
             printDocument.PrinterSettings.PrinterName = printerName;
+            printDocument.PrinterSettings.Duplex = Duplex.Vertical;
+
             PrintState state = PrintStateFactory.Create(document, pageRange);
             printDocument.PrintPage += (_, e) => PrintDocumentOnPrintPage(e, state);
             printDocument.Print();

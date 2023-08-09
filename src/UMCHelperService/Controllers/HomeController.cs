@@ -1,11 +1,7 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using PrintIt.Core;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Net;
 using System;
-using System.IO;
 using System.Security.Principal;
 
 namespace UMCHelperService.Controllers

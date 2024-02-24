@@ -36,7 +36,7 @@ namespace UMCHelperService.Controllers
             await using Stream pdfStream = request.PdfFile.OpenReadStream();
             _pdfPrintService.Print(pdfStream, request.PrinterName, request.PageRange);
             
-            return Ok("Da gui lenh in den may in");
+            return Ok("Da gui lenh in den may in.");
         }
         //Gọi exe file, sử dụng thư viên Spire để in file, có hiển thị chữ ký số
         //Window service không gọi trực tiếp Spire được, phải gọi qua file exe
